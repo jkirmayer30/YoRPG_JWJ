@@ -1,0 +1,5 @@
+V1 Notes 2021-11-22
+  0. Extending classes Protagonist and Monster from Character class allows YoRPG.java to run properly. 
+  1. We noticed that the subclass constructors would always override the superclass constructors. 
+  2. We used the keyword super() to refer to the parent constructors when the constructor was the same in the subclass. 
+  
