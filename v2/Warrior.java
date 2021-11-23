@@ -13,11 +13,11 @@ public class Warrior extends Protagonist {
   }
 
   public void specialize() {
-    this._damageMult = 2;
+    this._damageMult = 3;
   }
 
   public void normalize() {
-    this._damageMult = 1;
+    this._damageMult = 2;
   }
 
 }
