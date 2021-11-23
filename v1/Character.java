@@ -7,14 +7,13 @@ public class Character {
   public Character() {
     _health = 50;
     _baseDamage = 10;
-    _damageMult = 1;
+    _damageMult = 1
   }
 
   public Character(String name) {
     _name = name;
     _health = 50;
     _baseDamage = 10;
-    _damageMult = 1;
   }
 
   public String getName() {

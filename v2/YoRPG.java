@@ -86,7 +86,7 @@ public class YoRPG {
     catch ( IOException e ) { }
 
     //instantiate the player's character
-    pat = new Protagonist( name );
+    pat = new Protagonist( name ,50);
 
   }//end newGame()
 
@@ -106,7 +106,7 @@ public class YoRPG {
     else {
 	    System.out.println( "\nLo, yonder monster approacheth!" );
 
-	    smaug = new Monster();
+	    smaug = new Monster(50);
 
 	    while( smaug.isAlive() && pat.isAlive() ) {
 

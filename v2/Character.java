@@ -4,13 +4,13 @@ public class Character {
   public int _baseDamage;
   public int _damageMult;
 
-  public Character() {
+  public Character(int hp) {
     _health = 50;
     _baseDamage = 10;
     _damageMult = 1;
   }
 
-  public Character(String name) {
+  public Character(String name, int hp) {
     _name = name;
     _health = 50;
     _baseDamage = 10;

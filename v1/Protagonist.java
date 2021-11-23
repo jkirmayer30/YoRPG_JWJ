@@ -2,12 +2,12 @@ public class Protagonist extends Character {
   public String _name;
   public int _baseDamage;
 
-  public Protagonist() {
-    super();
+  public Protagonist(int hp) {
+    super(hp);
   }
 
-  public Protagonist(String name) {
-    super(name);
+  public Protagonist(String name, int hp) {
+    super(name,hp);
   }
 
   public void specialize() {
