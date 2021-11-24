@@ -1,6 +1,4 @@
 public class Protagonist extends Character {
-  public String _name;
-  public int _baseDamage;
 
   public Protagonist() {
     super();

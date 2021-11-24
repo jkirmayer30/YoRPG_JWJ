@@ -1,6 +1,4 @@
 public class Priest extends Protagonist {
-  public String _name;
-  public int _baseDamage;
 
   public Priest(String name) {
     super(name);

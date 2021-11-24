@@ -39,12 +39,14 @@ public class Character {
     int totalDamage = 0;
     if (Math.random() > 0.5 ) {
       totalDamage = _baseDamage * _damageMult - _defense;
+      System.out.println(_baseDamage);
     }
     return m.reduceHealth(totalDamage);
   }
 
   public int reduceHealth(int damage) {
     _health -= damage;
+    System.out.println(damage);
     return damage;
   }
 }

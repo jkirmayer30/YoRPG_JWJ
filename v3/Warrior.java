@@ -1,5 +1,4 @@
 public class Warrior extends Protagonist {
-  public String _name;
   public int _baseDamage;
 
   public Warrior(String name) {
