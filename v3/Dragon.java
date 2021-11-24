@@ -9,4 +9,8 @@ public class Dragon extends Monster {
     _defense = 20; 
   }
 
+  public String getRole () {
+    return "Dragon";
+  }
+
 }

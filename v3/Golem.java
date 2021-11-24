@@ -8,4 +8,8 @@ public class Golem extends Monster {
     _health = 400;
   }
 
+  public String getRole () {
+    return "Golem";
+  }
+
 }

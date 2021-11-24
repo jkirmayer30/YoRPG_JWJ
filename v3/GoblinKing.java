@@ -12,4 +12,8 @@ public class GoblinKing extends Monster {
     _baseDamage = 30; 
   }
 
+  public String getRole () {
+    return "Goblin King";
+  }
+
 }

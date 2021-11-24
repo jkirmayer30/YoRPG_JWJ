@@ -9,4 +9,7 @@ public class Priest extends Protagonist {
     return "Heals for 5 health after every round.";
   }
 
+  public String getRole () {
+    return "Priest";
+  }
 }
