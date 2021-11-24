@@ -1,15 +1,13 @@
-// Needs fix (only basic template)
-
 public class Warrior extends Protagonist {
   public String _name;
   public int _baseDamage;
 
-  public Warrior() {
-    super();
-  }
-
   public Warrior(String name) {
-    super(name);
+    _name = name;
+    _health = 100;
+    _baseDamage = 20;
+    _damageMult = 1;
+    _defense = 10;
   }
 
   public void specialize() {
@@ -17,7 +15,7 @@ public class Warrior extends Protagonist {
   }
 
   public void normalize() {
-    this._damageMult = 2;
+    this._damageMult = 1;
   }
 
 }
