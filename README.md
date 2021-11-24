@@ -12,11 +12,11 @@ New Monster Classes:
 - Golem: Monster with very tough defense. 
 - GoblinKing: Monster with medium defense with high damage. 
 
-Version-to Version Modifications
-v0: Implementing classes Monster and Protagonist to allow YoRPG to run properly. 
-v1: Extended classes Monster and Protagonist under class Character. 
-v2: Implemented additional Protagonist and Monster subclasses. 
-v3: Modified driver file to allow player to select their Protagonist class. Added the use of super() in Protagonist and Monster subclasses. 
+Version-to Version Modifications: 
+- v0: Implementing classes Monster and Protagonist to allow YoRPG to run properly. 
+- v1: Extended classes Monster and Protagonist under class Character. 
+- v2: Implemented additional Protagonist and Monster subclasses. 
+- v3: Modified driver file to allow player to select their Protagonist class. Added the use of super() in Protagonist and Monster subclasses. 
 
 Ways to improve game in the future
 - Add more Protagonist and Monster classes.
