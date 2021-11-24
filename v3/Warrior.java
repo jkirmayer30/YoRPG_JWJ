@@ -3,15 +3,12 @@ public class Warrior extends Protagonist {
   public int _baseDamage;
 
   public Warrior(String name) {
-    _name = name;
-    _health = 100;
-    _baseDamage = 20;
-    _damageMult = 1;
-    _defense = 10;
+    super(name);
+    this._baseDamage = 40;
   }
 
   public static String about() {
-    return "A specialize attack is thriced instead of doubled.";
+    return "A specialized attack does triple damage.";
   }
 
   public void specialize() {
