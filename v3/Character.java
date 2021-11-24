@@ -25,6 +25,9 @@ public class Character {
   }
 
   public int getHealth() {
+    if (_health < 0) {
+      _health = 0;
+    }
     return _health;
   }
 
