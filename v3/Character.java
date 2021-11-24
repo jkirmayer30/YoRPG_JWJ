@@ -5,6 +5,9 @@ public class Character {
   protected int _damageMult;
   protected int _defense;
 
+  // for creating special attacks that don't depend on damage
+  protected boolean _specialized;
+
   public Character() {
     _health = 100;
     _baseDamage = 20;

@@ -4,11 +4,11 @@ public class Assassin extends Protagonist {
 
   public Assassin(String name) {
     super(name);
-    _defense = 10;
+    _baseDamage = 20;
   }
 
   public static String about() {
-    return "Never misses an attack.";
+    return "A marksman with a bow who never misses an attack. Special attacks have a 10% chance of dealing 10x damage.";
   }
 
   public int attack(Character m) {
