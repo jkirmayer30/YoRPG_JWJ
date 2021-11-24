@@ -3,3 +3,12 @@ V1 Notes 2021-11-22
   1. We noticed that the subclass constructors would always override the superclass constructors. 
   2. We used the keyword super() to refer to the parent constructors when the constructor was the same in the subclass. 
   
+V2 Notes 2021-11-23
+  0. Implemented additional Protagonist and Monster subclasses.
+  
+V3 Notes 2021-11-23
+  0. Modified driver file to allow player to select their Protagonist class.
+  1. Added the use of super() in Protagonist and Monster subclasses.
+  2. Character name null was reintroduced. 
+  
+  
