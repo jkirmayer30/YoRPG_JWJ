@@ -14,14 +14,6 @@ public class Assassin extends Protagonist {
     return "Never misses an attack.";
   }
 
-  public void specialize() {
-    this._damageMult = 3;
-  }
-
-  public void normalize() {
-    this._damageMult = 2;
-  }
-
   public int attack(Character m) {
     int totalDamage = 0;
     totalDamage = _baseDamage * _damageMult - _defense;
