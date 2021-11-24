@@ -14,12 +14,4 @@ public class Priest extends Protagonist {
     return "Heals for 5 health after every round.";
   }
 
-  public void specialize() {
-    this._damageMult = 2;
-  }
-
-  public void normalize() {
-    this._damageMult = 1;
-  }
-
 }
