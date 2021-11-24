@@ -8,7 +8,7 @@ public class Warrior extends Protagonist {
   }
 
   public static String about() {
-    return "A specialized attack does triple damage.";
+    return "A skilled swordsman with an extra sharp blade that deals extra damage. Specialized attacks deal triple damage.";
   }
 
   public void specialize() {
@@ -18,5 +18,6 @@ public class Warrior extends Protagonist {
   public void normalize() {
     this._damageMult = 1;
   }
+
 
 }
