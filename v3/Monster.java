@@ -8,5 +8,4 @@ public class Monster extends Character {
     _damageMult = 1;
     _defense = 10;
   }
-
 }

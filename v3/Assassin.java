@@ -4,6 +4,7 @@ public class Assassin extends Protagonist {
 
   public Assassin(String name) {
     super(name);
+    _baseDamage = 20;
   }
 
   public static String about() {
