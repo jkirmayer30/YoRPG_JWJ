@@ -1,15 +1,14 @@
-public class Dragon extends Monster {
+public class Golem extends Monster {
   public String _name;
   public int _baseDamage;
 
   public String about() {
-    return "Has strong scales. Swords and sticks are not effective. ";
+    return "This guy's a tank. Literally a wall made of stone. ";
   }
 
-  public Dragon() {
+  public Golem() {
     super();
-    _health = 300;
-    _defense = 20; 
+    _health = 400;
   }
 
 }
