@@ -3,10 +3,7 @@ public class Assassin extends Protagonist {
   public int _baseDamage;
 
   public Assassin(String name) {
-    _name = name;
-    _health = 100;
-    _baseDamage = 20;
-    _damageMult = 1;
+    super(name);
     _defense = 10;
   }
 

@@ -10,4 +10,12 @@ public class Protagonist extends Character {
     super(name);
   }
 
+  public void specialize() {
+    this._damageMult = 2;
+  }
+
+  public void normalize() {
+    this._damageMult = 1;
+  }
+
 }
