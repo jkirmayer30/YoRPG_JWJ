@@ -16,15 +16,6 @@
  *
  **********************************************/
 
-/*
-REMAINING TASKS
-- Fix character name "null" error
-- Balance game by changing numbers
-- Look through subclasses code to delete unnecssary code
-- Fill out googl form
-*/
-
-
  /* OUR DRIVER MODS
     0. Added code to determine Protagonist role based on player input
     1. Added code to instantiating the player's character
