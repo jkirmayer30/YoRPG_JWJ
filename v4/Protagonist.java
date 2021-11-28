@@ -16,4 +16,11 @@ public class Protagonist extends Character {
     this._damageMult = 1;
   }
 
+  public void getHeal() {
+    _health += 5; 
+  }
+
+  public String getRole () {
+    return "Protagonist";
+  }
 }
