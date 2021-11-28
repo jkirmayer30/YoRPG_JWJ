@@ -21,6 +21,9 @@
     1. Added code to instantiating the player's character
     2. Added code to randomize monsters
     3. Added code to display player and monster health status
+    4. Added code to display the player role and which monster the player is fighting
+    5. Added code to display Priest healing ability
+    6. Rearranged the attack and print statements to reflect player and monster turns
 */
 
 import java.io.*;
@@ -89,6 +92,7 @@ public class YoRPG {
     s += "\t1: Warrior: " + Warrior.about() + "\n";
     s += "\t2: Priest: " + Priest.about() + "\n";
     s += "\t3: Assassin: " + Assassin.about() + "\n";
+    s += "\t4: Mage: " + Mage.about() + "\n";
     s += "Selection: ";
     System.out.print( s );
 
@@ -112,6 +116,8 @@ public class YoRPG {
       pat = new Priest(name);
     } else if (playerChoice == 3) {
       pat = new Assassin(name);
+    } else if (playerChoice == 4) {
+      pat = new Mage(name);
     } else {
       System.out.println("\nSorry, your character has left the party. You will be assigned a default one instead.");
       pat = new Protagonist( name );
@@ -134,18 +140,23 @@ public class YoRPG {
 	    System.out.println( "\nNothing to see here. Move along!" );
     else {
 	    System.out.println( "\nLo, yonder monster approacheth!" );
-
       //instantiate the monster
       int monsterChoice = (int) (Math.random() * 2);
+      String aboutDescrip = "";
       if (monsterChoice == 0) {
         smaug = new GoblinKing();
+        aboutDescrip = GoblinKing.about();
       } else if (monsterChoice == 1) {
         smaug = new Dragon();
+        aboutDescrip = Dragon.about();
       } else if (monsterChoice == 2) {
         smaug = new Golem();
+        aboutDescrip = Golem.about();
       }
 
-	    while( smaug.isAlive() && pat.isAlive() ) {
+      System.out.println( "\nYou are " + pat.getName() + ", the " + pat.getRole() + ". " + "You are fighting a " + smaug.getRole() + ", " + aboutDescrip );
+
+      while( smaug.isAlive() && pat.isAlive() ) {
 
         // Give user the option of using a special attack:
         // If you land a hit, you incur greater damage,
@@ -163,17 +174,25 @@ public class YoRPG {
           pat.normalize();
 
         d1 = pat.attack( smaug );
-        d2 = smaug.attack( pat );
 
         System.out.println( "\n" + pat.getName() + " dealt " + d1 +
                             " points of damage.");
+
+        System.out.println("\nYe Olde Monster health: " + smaug.getHealth());
+
+        if (pat.getRole() == "Priest") {
+          pat.getHeal();
+          System.out.println("\nYe health for 5!");
+          System.out.println("\nYe health: " + pat.getHealth());
+        }
+
+        d2 = smaug.attack( pat );
 
         System.out.println( "\n" + "Ye Olde Monster smacked " + pat.getName() +
                             " for " + d2 + " points of damage.");
 
         System.out.println("\nYe health: " + pat.getHealth());
 
-        System.out.println("\nYe Olde Monster health: " + smaug.getHealth());
 	    }//end while
 
 	    //option 1: you & the monster perish
