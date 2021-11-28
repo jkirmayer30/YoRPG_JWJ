@@ -3,7 +3,7 @@ public class Warrior extends Protagonist {
 
   public Warrior(String name) {
     super(name);
-    this._baseDamage = 40;
+    _baseDamage = 30;
   }
 
   public static String about() {
@@ -14,9 +14,8 @@ public class Warrior extends Protagonist {
     this._damageMult = 3;
   }
 
-  public void normalize() {
-    this._damageMult = 1;
+  public String getRole () {
+    return "Warrior";
   }
-
 
 }
