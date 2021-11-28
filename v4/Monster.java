@@ -6,8 +6,12 @@ public class Monster extends Character {
   public Monster() {
     super();
     _health = 300;
-    _baseDamage = 20;
+    _baseDamage = 30;
     _damageMult = 1;
     _defense = 10;
+  }
+
+  public String getRole () {
+    return "Monster";
   }
 }
