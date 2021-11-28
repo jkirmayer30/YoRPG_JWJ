@@ -134,7 +134,6 @@ public class YoRPG {
 	    System.out.println( "\nNothing to see here. Move along!" );
     else {
 	    System.out.println( "\nLo, yonder monster approacheth!" );
-
       //instantiate the monster
       int monsterChoice = (int) (Math.random() * 2);
       if (monsterChoice == 0) {
@@ -145,7 +144,9 @@ public class YoRPG {
         smaug = new Golem();
       }
 
-	    while( smaug.isAlive() && pat.isAlive() ) {
+      System.out.println( "\nYou are " + pat.getName() + ", a " + pat.getRole() + ". " + "You are fighting a " + smaug.getRole() + ".");
+
+      while( smaug.isAlive() && pat.isAlive() ) {
 
         // Give user the option of using a special attack:
         // If you land a hit, you incur greater damage,

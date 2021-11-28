@@ -17,4 +17,8 @@ public class Assassin extends Protagonist {
     return m.reduceHealth(totalDamage);
   }
 
+  public String getRole () {
+    return "Assassin";
+  }
+
 }

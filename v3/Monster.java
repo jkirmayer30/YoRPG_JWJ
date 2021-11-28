@@ -10,4 +10,8 @@ public class Monster extends Character {
     _damageMult = 1;
     _defense = 10;
   }
+
+  public String getRole () {
+    return "Monster";
+  }
 }
